@@ -61,7 +61,7 @@ function loadQuestion() {
 }
 
 function handleAnswerSubmission() {
-	const userAnswer = userAnswerEl.value.trim();
+	const userAnswer = userAnswerEl.value.trim().toLowerCase();
 	const correctAnswer = questions[currentQuestionIndex].answer;
 	const correctAnswerParts = correctAnswer.toLowerCase().split(" ");
 	const isCorrect = correctAnswerParts.some((part) =>
