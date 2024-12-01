@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Football Quiz</title>
+		<link rel="stylesheet" href="style.css" />
+		
+	</head>
+	<body>
+		<header>
+			<h1>Football Quiz</h1>
+			<p>Can you name these famous footballers?</p>
+		</header>
+		<main>
+			<section id="quiz">
+				<div class="question-container">
+					<img id="footballer-image" src="" alt="Footballer" />
+					<input
+						id="user-answer"
+						type="text"
+						placeholder="Enter the player's name"
+					/>
+				</div>
+				<button id="submit-btn" onclick="submitButton()">Submit</button>
+                <div id="feedback" style="margin-top: 10px; font-size: 16px;"></div>
+            </section>
+			<section id="result" class="hidden">
+				<h2>Your Score: <span id="score"></span></h2>
+				<button id="restart-btn" onclick="restartButton()">Restart Quiz</button>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2024 Football Quiz</p>
+		</footer>
+        <script src="index.js"></script>
+	</body>
+</html>
